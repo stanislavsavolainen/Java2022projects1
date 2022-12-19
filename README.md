@@ -3,4 +3,4 @@
  
  subproject1 : polymorphism, interface, functions overloading and overriding, etc..
  
- subproject2 : synchronized method in java, threads, java iterator through ArrayList
+ subproject2 : synchronized method in java, threads with status, java iterator through ArrayList

@@ -29,16 +29,16 @@ public class Main {
 		
 		for(int i = 0; i < 2; i++)System.out.println();
 		
-			for (Thread s : threadSet) { 
+		for (Thread s : threadSet) { 
 			
-				if ( s.getId() == a.threadObjGetId() || s.getId() == b.threadObjGetId() ){
-					System.out.println("=======??=======");
-					System.out.println("Thread id : " + s.getId());
-					System.out.println("Thread name " + s.getName());
-					System.out.println("Thread is alive " + s.isAlive());
-					System.out.println("Thread priority " + s.getPriority());
-					System.out.println("Thread state  " + s.getState());
-				}
+			if ( s.getId() == a.threadObjGetId() || s.getId() == b.threadObjGetId() ){
+				System.out.println("=======??=======");
+				System.out.println("Thread id : " + s.getId());
+				System.out.println("Thread name " + s.getName());
+				System.out.println("Thread is alive " + s.isAlive());
+				System.out.println("Thread priority " + s.getPriority());
+				System.out.println("Thread state  " + s.getState());
+			}
 		}
 		
 	}
