@@ -23,6 +23,8 @@ public class ThreadClass extends Thread {
 		 System.out.println("Thread is alive " + threadInfo.isAlive());
 		 System.out.println("Thread priority " + threadInfo.getPriority());
 		 System.out.println("Thread state  " + threadInfo.getState());
+		
+		threadObjSetId(threadInfo.getId());
 		 
 		 for(int i =0; i < 20; i++){
 			
