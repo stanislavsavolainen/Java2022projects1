@@ -1,0 +1,31 @@
+
+
+
+
+
+Java volatile vs synchronized:
+
+
+http://www.cs.umd.edu/%7Epugh/java/memoryModel/jsr-133-faq.html
+
+
+http://javaexp.blogspot.com/2007/12/difference-between-volatile-and.html
+
+
+https://www.youtube.com/watch?v=jiWNk9S46j4
+
+
+Atamic, Volatile , Synchronized in Java:
+https://www.youtube.com/watch?v=71dgtPrbToE
+
+
+What role has the VOLATILE keyword in Java?
+https://www.youtube.com/watch?v=V2hC-g6FoGc
+
+
+
+https://javabeat.net/volatile-keyword-in-java/
+
+https://www.geeksforgeeks.org/difference-between-atomic-volatile-and-synchronized-in-java/
+
+https://www.baeldung.com/java-volatile

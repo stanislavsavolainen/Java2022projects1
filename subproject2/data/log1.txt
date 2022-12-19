@@ -1,0 +1,246 @@
+
+
+		Basic thread demo with info begins ! 
+
+
+Thread status in beging 
+Thread id : 8
+Thread name Thread-0
+Thread is alive true
+Thread priority 5
+Thread state  RUNNABLE
+Thread status in beging 
+Thread id : 9
+Thread name Thread-1
+Thread is alive true
+Thread priority 5
+Thread state  RUNNABLE
+Display my thread status in process
+
+
+=======??=======
+Thread id : 9
+Thread name Thread-1
+Thread is alive true
+Thread priority 5
+Thread state  TIMED_WAITING
+=======??=======
+Thread id : 8
+Thread name Thread-0
+Thread is alive true
+Thread priority 5
+Thread state  TIMED_WAITING
+Display all thread status in process
+
+
+================
+Thread id : 4
+Thread name Signal Dispatcher
+Thread is alive true
+Thread priority 9
+Thread state  RUNNABLE
+================
+Thread id : 9
+Thread name Thread-1
+Thread is alive true
+Thread priority 5
+Thread state  TIMED_WAITING
+================
+Thread id : 1
+Thread name main
+Thread is alive true
+Thread priority 5
+Thread state  RUNNABLE
+================
+Thread id : 8
+Thread name Thread-0
+Thread is alive true
+Thread priority 5
+Thread state  TIMED_WAITING
+================
+Thread id : 3
+Thread name Finalizer
+Thread is alive true
+Thread priority 8
+Thread state  WAITING
+================
+Thread id : 2
+Thread name Reference Handler
+Thread is alive true
+Thread priority 10
+Thread state  WAITING
+
+
+=======??=======
+Thread id : 9
+Thread name Thread-1
+Thread is alive true
+Thread priority 5
+Thread state  TIMED_WAITING
+=======??=======
+Thread id : 8
+Thread name Thread-0
+Thread is alive true
+Thread priority 5
+Thread state  TIMED_WAITING
+
+
+=======??=======
+Thread id : 9
+Thread name Thread-1
+Thread is alive false
+Thread priority 5
+Thread state  TERMINATED
+=======??=======
+Thread id : 8
+Thread name Thread-0
+Thread is alive false
+Thread priority 5
+Thread state  TERMINATED
+Display all thread status after tread-stop
+
+
+================
+Thread id : 4
+Thread name Signal Dispatcher
+Thread is alive true
+Thread priority 9
+Thread state  RUNNABLE
+================
+Thread id : 1
+Thread name main
+Thread is alive true
+Thread priority 5
+Thread state  RUNNABLE
+================
+Thread id : 3
+Thread name Finalizer
+Thread is alive true
+Thread priority 8
+Thread state  WAITING
+================
+Thread id : 2
+Thread name Reference Handler
+Thread is alive true
+Thread priority 10
+Thread state  WAITING
+TERMINATED
+TERMINATED
+
+
+		Synchronized demo begins ! 
+
+
+******************************
+Thread status in beging 
+Thread id : 10
+Thread name Thread-2
+Thread is alive true
+Thread priority 5
+Thread state  RUNNABLE
+******************************
+*************====*************
+******************************
+Thread status in beging 
+Thread id : 11
+Thread name Thread-3
+Thread is alive true
+Thread priority 5
+Thread state  RUNNABLE
+******************************
+*************====*************
+******************************
+Thread status in beging 
+Thread id : 12
+Thread name Thread-4
+Thread is alive true
+Thread priority 5
+Thread state  RUNNABLE
+******************************
+*************====*************
+Debug thread name=Thread-2,id=10>>> sync function answer :4( param :2and count : 10)
+Debug thread name=Thread-2,id=10>>> sync function answer :6( param :2and count : 10)
+Debug thread name=Thread-2,id=10>>> sync function answer :8( param :2and count : 10)
+Debug thread name=Thread-2,id=10>>> sync function answer :10( param :2and count : 10)
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TIMED_WAITING
+	 Sceduler debug >>> name=Thread-3, id =11, state =BLOCKED
+	 Sceduler debug >>> name=Thread-4, id =12, state =BLOCKED
+Debug thread name=Thread-2,id=10>>> sync function answer :12( param :2and count : 10)
+Debug thread name=Thread-2,id=10>>> sync function answer :14( param :2and count : 10)
+Debug thread name=Thread-2,id=10>>> sync function answer :16( param :2and count : 10)
+Debug thread name=Thread-2,id=10>>> sync function answer :18( param :2and count : 10)
+Debug thread name=Thread-2,id=10>>> sync function answer :20( param :2and count : 10)
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TIMED_WAITING
+	 Sceduler debug >>> name=Thread-3, id =11, state =BLOCKED
+	 Sceduler debug >>> name=Thread-4, id =12, state =BLOCKED
+Debug thread name=Thread-2,id=10>>> sync function answer :22( param :2and count : 10)
+Thread name=Thread-2,id=10 >>>>  answer is :22
+*************====*************
+Debug thread name=Thread-4,id=12>>> sync function answer :16( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :24( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :32( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :40( param :8and count : 20)
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TERMINATED
+	 Sceduler debug >>> name=Thread-3, id =11, state =BLOCKED
+	 Sceduler debug >>> name=Thread-4, id =12, state =TIMED_WAITING
+Debug thread name=Thread-4,id=12>>> sync function answer :48( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :56( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :64( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :72( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :80( param :8and count : 20)
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TERMINATED
+	 Sceduler debug >>> name=Thread-3, id =11, state =BLOCKED
+	 Sceduler debug >>> name=Thread-4, id =12, state =TIMED_WAITING
+Debug thread name=Thread-4,id=12>>> sync function answer :88( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :96( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :104( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :112( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :120( param :8and count : 20)
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TERMINATED
+	 Sceduler debug >>> name=Thread-3, id =11, state =BLOCKED
+	 Sceduler debug >>> name=Thread-4, id =12, state =TIMED_WAITING
+Debug thread name=Thread-4,id=12>>> sync function answer :128( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :136( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :144( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :152( param :8and count : 20)
+Debug thread name=Thread-4,id=12>>> sync function answer :160( param :8and count : 20)
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TERMINATED
+	 Sceduler debug >>> name=Thread-3, id =11, state =BLOCKED
+	 Sceduler debug >>> name=Thread-4, id =12, state =TIMED_WAITING
+Debug thread name=Thread-4,id=12>>> sync function answer :168( param :8and count : 20)
+Thread name=Thread-4,id=12 >>>>  answer is :168
+*************====*************
+Debug thread name=Thread-3,id=11>>> sync function answer :10( param :5and count : 10)
+Debug thread name=Thread-3,id=11>>> sync function answer :15( param :5and count : 10)
+Debug thread name=Thread-3,id=11>>> sync function answer :20( param :5and count : 10)
+Debug thread name=Thread-3,id=11>>> sync function answer :25( param :5and count : 10)
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TERMINATED
+	 Sceduler debug >>> name=Thread-3, id =11, state =TIMED_WAITING
+	 Sceduler debug >>> name=Thread-4, id =12, state =TERMINATED
+Debug thread name=Thread-3,id=11>>> sync function answer :30( param :5and count : 10)
+Debug thread name=Thread-3,id=11>>> sync function answer :35( param :5and count : 10)
+Debug thread name=Thread-3,id=11>>> sync function answer :40( param :5and count : 10)
+Debug thread name=Thread-3,id=11>>> sync function answer :45( param :5and count : 10)
+Debug thread name=Thread-3,id=11>>> sync function answer :50( param :5and count : 10)
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TERMINATED
+	 Sceduler debug >>> name=Thread-3, id =11, state =TIMED_WAITING
+	 Sceduler debug >>> name=Thread-4, id =12, state =TERMINATED
+Debug thread name=Thread-3,id=11>>> sync function answer :55( param :5and count : 10)
+Thread name=Thread-3,id=11 >>>>  answer is :55
+*************====*************
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TERMINATED
+	 Sceduler debug >>> name=Thread-3, id =11, state =TERMINATED
+	 Sceduler debug >>> name=Thread-4, id =12, state =TERMINATED
+Scheduler activated !
+	 Sceduler debug >>> name=Thread-2, id =10, state =TERMINATED
+	 Sceduler debug >>> name=Thread-3, id =11, state =TERMINATED
+	 Sceduler debug >>> name=Thread-4, id =12, state =TERMINATED
