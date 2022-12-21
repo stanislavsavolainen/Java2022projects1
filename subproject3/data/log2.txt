@@ -1,0 +1,134 @@
+
+
+
+
+		Singleton class demo 
+
+
+
+Class inited successfully, hashCode : 31168322
+
+Fail to init new class, hashCode : 31168322
+Error creating class java.lang.Exception: Exception: Sigleton class already exsist 
+
+Fail to init new class, hashCode : 31168322
+Error creating class java.lang.Exception: Exception: Sigleton class already exsist 
+
+Fail to init new class, hashCode : 31168322
+Error creating class java.lang.Exception: Exception: Sigleton class already exsist 
+
+Fail to init new class, hashCode : 31168322
+Error creating class java.lang.Exception: Exception: Sigleton class already exsist 
+
+Fail to init new class, hashCode : 31168322
+Error creating class java.lang.Exception: Exception: Sigleton class already exsist 
+
+Fail to init new class, hashCode : 31168322
+Error creating class java.lang.Exception: Exception: Sigleton class already exsist 
+
+Fail to init new class, hashCode : 31168322
+Error creating class java.lang.Exception: Exception: Sigleton class already exsist 
+
+Fail to init new class, hashCode : 31168322
+Error creating class java.lang.Exception: Exception: Sigleton class already exsist 
+
+Fail to init new class, hashCode : 31168322
+Error creating class java.lang.Exception: Exception: Sigleton class already exsist 
+
+
+Sigleton-class variable value 1234
+Sigleton-class variable value 1234
+Sigleton-class variable value 1234
+Sigleton-class variable value 1234
+Sigleton-class variable value 1234
+Sigleton-class variable value 1234
+Sigleton-class variable value 1234
+Sigleton-class variable value 1234
+Sigleton-class variable value 1234
+Sigleton-class variable value 1234
+
+
+		Thread-Notify wait & sleep demo 
+
+
+Thread-0...starts, ThreadClass1 at: Wed Dec 21 21:04:16 EET 2022
+Thread-1...starts, ThreadClass2 at : Wed Dec 21 21:04:21 EET 2022
+
+
+
+
+=======??=======
+Thread id : 8
+Thread name Thread-0
+Thread is alive true
+Thread priority 5
+Thread state  WAITING
+=======??=======
+Thread id : 9
+Thread name Thread-1
+Thread is alive true
+Thread priority 5
+Thread state  TIMED_WAITING
+
+
+Thread-1 continue working : Wed Dec 21 21:04:26 EET 2022
+Thread-0 continue working : Wed Dec 21 21:04:31 EET 2022
+
+
+Display threads after notify and wait compleated ! 
+thread1 name = Thread-0, thread2 state=TERMINATED
+thread2 name = Thread-1, thread2 state=TERMINATED
+
+
+		Static-volatile thread demo 
+
+
+ArrayList of ThreadClass1, hashCode : 1
+created threadClass, hashCode : 33121026
+created threadClass, hashCode : 21933161
+created threadClass, hashCode : 10844563
+created threadClass, hashCode : 28855442
+created threadClass, hashCode : 29868116
+******************************
+Thread status in beging, class hashCode 12517849
+Thread id : 10
+Thread name : Thread-2
+Thread state : RUNNABLE
+Thread volaileObject value1 = 1 value2 = 1
+Thread Object value1 = 1 value2 = 1
+******************************
+******************************
+Thread status in beging, class hashCode 24889097
+Thread id : 11
+Thread name : Thread-3
+Thread state : RUNNABLE
+Thread volaileObject value1 = 1 value2 = 2
+Thread Object value1 = 1 value2 = 1
+******************************
+******************************
+Thread status in beging, class hashCode 7930927
+Thread id : 12
+Thread name : Thread-4
+Thread state : RUNNABLE
+Thread volaileObject value1 = 1 value2 = 3
+Thread Object value1 = 1 value2 = 1
+******************************
+******************************
+Thread status in beging, class hashCode 25027390
+Thread id : 13
+Thread name : Thread-5
+Thread state : RUNNABLE
+Thread volaileObject value1 = 1 value2 = 4
+Thread Object value1 = 1 value2 = 1
+******************************
+******************************
+Thread status in beging, class hashCode 28255759
+Thread id : 14
+Thread name : Thread-6
+Thread state : RUNNABLE
+Thread volaileObject value1 = 1 value2 = 5
+Thread Object value1 = 1 value2 = 1
+******************************
+In main volatile object value1 = 0
+In main volatile object value2 = 5
+ArrayList of ThreadClass1, hashCode : -1728520083
