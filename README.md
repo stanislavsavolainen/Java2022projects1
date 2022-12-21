@@ -5,4 +5,4 @@
  
  subproject2 : synchronized method in java, threads with status, java iterator through ArrayList
  
- subproject3 : sigleton-class, thread wait & notify, thread static-volatile value
+ subproject3 : singleton-class, thread wait & notify, thread static-volatile value

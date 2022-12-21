@@ -1,22 +1,22 @@
-package sigleton1;
+package singleton1;
 
-public class SigletonClass {
+public class SingletonClass {
 
 	public String str1="1234"; 
-	private static SigletonClass classInstance = null;
+	private static SingletonClass classInstance = null;
 	
-	public static SigletonClass getInstance() throws Exception {
+	public static SingletonClass getInstance() throws Exception {
 		
 		if( classInstance == null ){
-			classInstance = new SigletonClass();
+			classInstance = new SingletonClass();
 			System.out.println();
 			System.out.println("Class inited successfully, hashCode : "+classInstance.hashCode());
 		} 
 		
-		else if ( classInstance != null ) {
+		else {
 			System.out.println();
 			System.out.println("Fail to init new class, hashCode : " +classInstance.hashCode() );
-			throw new Exception("Exception: Sigleton class already exsist "); 
+			throw new Exception("Exception: Singleton class already exsist "); 
 		}
 				
 		return classInstance;
