@@ -1,0 +1,1 @@
+Person[fullname=Kalle Makinen,age=40,birthdate=1992-07-26,isonline=false]

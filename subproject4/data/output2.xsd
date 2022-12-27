@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="modelclass1.Person2">
+		 <xs:sequense>
+			 <xs:element name="serialVersionUID" type="xs:long" fixed="8395609785695151774" />
+			 <xs:element name="fullname" type="xs:string" fixed="Jorma Kukkonen" />
+			 <xs:element name="age" type="xs:integer" fixed="60" />
+			 <xs:element name="isonline" type="xs:boolean" fixed="false" />
+			 <xs:element name="birthdate" type="xs:date" fixed="Sat Nov 09 00:00:00 EET 1996" />
+		 </xs:sequense>
+	</xs:element>
+</xs:schema>

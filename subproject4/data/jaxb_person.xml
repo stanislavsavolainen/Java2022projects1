@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+    <fullname>Jorma Kukkonen</fullname>
+    <age>60</age>
+    <isonline>false</isonline>
+    <birthdate>1996-11-09T00:00:00+02:00</birthdate>
+</person>

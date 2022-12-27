@@ -1,0 +1,180 @@
+		Serializer demo 
+
+
+Begin serialization service : 
+SerializationService -> serialize : 
+Successfully wrote to the file. Check your file : /home/unk900t2/programming2022/java2022proj1/serialized/serialized_person1.txt
+Serialization is done 
+
+
+Begin deserialization service : 
+Clone fullname :null
+Clone age :0
+Clone birthdate :null
+Clone is online:false
+
+
+SerializationService -> deserialize : 
+
+
+Successfully read file : /home/unk900t2/programming2022/java2022proj1/serialized/serialized_person1.txt
+File content : Person[fullname=Kalle Makinen,age=40,birthdate=1992-07-26,isonline=false]
+File content 2 : Person[fullname=Kalle Makinen,age=40,birthdate=1992-07-26,isonline=false
+Length : 72and object length : 6
+File content 3 : fullname=Kalle Makinen,age=40,birthdate=1992-07-26,isonline=false
+Parse deserialization elements :
+	fullname=Kalle Makinen
+	age=40
+	birthdate=1992-07-26
+	isonline=false
+Deserialization is done 
+Clone fullname :Kalle Makinen
+Clone age :40
+Clone birthdate :Sun Jul 26 00:00:00 EEST 1992
+Clone is online:false
+
+
+		JAXB Marshaller demo 
+
+
+Begin jaxb-marshaller service : 
+
+
+JAXB Marshaller begin
+JAXB content : 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+    <fullname>Jorma Kukkonen</fullname>
+    <age>60</age>
+    <isonline>false</isonline>
+    <birthdate>1996-11-09T00:00:00+02:00</birthdate>
+</person>
+
+Successfully wrote to the file. Check your file : /home/unk900t2/programming2022/java2022proj1/serialized/jaxb_person.xml
+jaxb-marshaller is done 
+
+
+Begin jaxb-unmarshaller service : 
+Clone fullname :null
+Clone age :0
+Clone birthdate :null
+Clone is online:false
+
+
+JAXB Unmarshaller begin
+Jaxb-unmarshaller is done ! 
+Clone fullname :Jorma Kukkonen
+Clone age :60
+Clone birthdate :Sat Nov 09 00:00:00 EET 1996
+Clone is online:false
+
+
+		Java reflection demo ( debug object ) 
+
+
+Starting ObjectReflectionService -> debugObject : 
+ Object name : class modelclass1.Person
+
+
+Constructor name public modelclass1.Person()
+Constructor name public modelclass1.Person(java.lang.String,int,java.util.Date)
+
+
+Display current object all methods : 
+Method name public void modelclass1.Person.setFullName(java.lang.String)
+Method name public void modelclass1.Person.setBirthDate(java.util.Date)
+Method name public void modelclass1.Person.setIsonline(boolean)
+Method name public void modelclass1.Person.setAge(int)
+Method name public java.lang.String modelclass1.Person.getFullname()
+Method name public int modelclass1.Person.getAge()
+Method name public java.util.Date modelclass1.Person.getBirthdate()
+Method name public boolean modelclass1.Person.getIsonline()
+Method name public java.lang.String modelclass1.Person.toString()
+Method name public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+Method name public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+Method name public final void java.lang.Object.wait() throws java.lang.InterruptedException
+Method name public boolean java.lang.Object.equals(java.lang.Object)
+Method name public native int java.lang.Object.hashCode()
+Method name public final native java.lang.Class<?> java.lang.Object.getClass()
+Method name public final native void java.lang.Object.notify()
+Method name public final native void java.lang.Object.notifyAll()
+
+
+ Display current object variables, types and values : 
+Object name : serialVersionUID, type : long, modifier : 26, value : -618265888698742953
+Object name : fullname, type : class java.lang.String, modifier : 1, value : Kalle Makinen
+Object name : age, type : int, modifier : 1, value : 40
+Object name : isonline, type : boolean, modifier : 1, value : false
+Object name : birthdate, type : class java.util.Date, modifier : 1, value : Sun Jul 26 00:00:00 EEST 1992
+
+
+
+
+Starting ObjectReflectionService -> debugObject : 
+ Object name : class modelclass1.Person2
+
+
+Constructor name public modelclass1.Person2()
+Constructor name public modelclass1.Person2(java.lang.String,int,java.util.Date)
+
+
+Display current object all methods : 
+Method name public void modelclass1.Person2.setFullName(java.lang.String)
+Method name public void modelclass1.Person2.setBirthDate(java.util.Date)
+Method name public void modelclass1.Person2.setIsonline(boolean)
+Method name public void modelclass1.Person2.setAge(int)
+Method name public java.lang.String modelclass1.Person2.getFullname()
+Method name public int modelclass1.Person2.getAge()
+Method name public java.util.Date modelclass1.Person2.getBirthdate()
+Method name public boolean modelclass1.Person2.getIsonline()
+Method name public java.lang.String modelclass1.Person2.toString()
+Method name public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+Method name public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+Method name public final void java.lang.Object.wait() throws java.lang.InterruptedException
+Method name public boolean java.lang.Object.equals(java.lang.Object)
+Method name public native int java.lang.Object.hashCode()
+Method name public final native java.lang.Class<?> java.lang.Object.getClass()
+Method name public final native void java.lang.Object.notify()
+Method name public final native void java.lang.Object.notifyAll()
+
+
+ Display current object variables, types and values : 
+Object name : serialVersionUID, type : long, modifier : 26, value : 8395609785695151774
+Object name : fullname, type : class java.lang.String, modifier : 1, value : Jorma Kukkonen
+Object name : age, type : int, modifier : 1, value : 60
+Object name : isonline, type : boolean, modifier : 1, value : false
+Object name : birthdate, type : class java.util.Date, modifier : 1, value : Sat Nov 09 00:00:00 EET 1996
+Starting ObjectReflectionService -> getXSDContent : 
+
+
+Object name : class modelclass1.Person
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="modelclass1.Person">
+		 <xs:sequense>
+			 <xs:element name="serialVersionUID" type="xs:long" fixed="-618265888698742953" />
+			 <xs:element name="fullname" type="xs:string" fixed="Kalle Makinen" />
+			 <xs:element name="age" type="xs:integer" fixed="40" />
+			 <xs:element name="isonline" type="xs:boolean" fixed="false" />
+			 <xs:element name="birthdate" type="xs:date" fixed="Sun Jul 26 00:00:00 EEST 1992" />
+		 </xs:sequense>
+	</xs:element>
+</xs:schema>
+Successfully wrote to the file. Check your file : /home/unk900t2/programming2022/java2022proj1/serialized/output1.xsd
+Starting ObjectReflectionService -> getXSDContent : 
+
+
+Object name : class modelclass1.Person2
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="modelclass1.Person2">
+		 <xs:sequense>
+			 <xs:element name="serialVersionUID" type="xs:long" fixed="8395609785695151774" />
+			 <xs:element name="fullname" type="xs:string" fixed="Jorma Kukkonen" />
+			 <xs:element name="age" type="xs:integer" fixed="60" />
+			 <xs:element name="isonline" type="xs:boolean" fixed="false" />
+			 <xs:element name="birthdate" type="xs:date" fixed="Sat Nov 09 00:00:00 EET 1996" />
+		 </xs:sequense>
+	</xs:element>
+</xs:schema>
+Successfully wrote to the file. Check your file : /home/unk900t2/programming2022/java2022proj1/serialized/output2.xsd
