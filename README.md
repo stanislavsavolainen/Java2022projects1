@@ -8,3 +8,5 @@
  subproject3 : singleton-class, thread wait & notify, thread static-volatile value
 
  subproject4 : serializer/deserializer, Jaxb-marshaller/unmarshaller, Java reflection, xml & xsd
+
+ subproject5 : JavaServlet with soap - web service and hibernate - database connector
