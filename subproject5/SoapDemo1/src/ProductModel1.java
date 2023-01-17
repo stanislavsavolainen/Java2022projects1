@@ -11,7 +11,7 @@ import javax.persistence.Table;
 public class ProductModel1 {
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
 	int id;
 	
@@ -47,11 +47,11 @@ public class ProductModel1 {
 	public double getPrice() { return price; }
 	
 	public String getDescription() {  return description; }
-	
-	
-	public void setUuid( String uuid) { this.uuid = uuid;  }
+
 	
 	public void setId( int id ) { this.id = id; }
+	
+	public void setUuid( String uuid) { this.uuid = uuid;  }
 	
 	public void setName(String name){ this.name = name; }
 	
